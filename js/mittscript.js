@@ -3,6 +3,11 @@ $(document).ready(function(){
     $('#hamburgermeny,#hamburgerkryss').click(function(){
          $('aside.mobilnav').toggleClass('open');
     })
+    
+        $(".section3").click(function(){
+            $("div").toggleClass('open')
+  
+    });
 
     var myIndex = 0;
     carousel();
@@ -19,5 +24,5 @@ $(document).ready(function(){
         x[myIndex-1].style.display = "block";  
         setTimeout(carousel, 2500); // Change image every 2 seconds
     }
-
+        
 })
